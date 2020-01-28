@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Cars/Caterham7/catherham_export_all_transforms..glb" type="PackedScene" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.905805, 0.356443, 1.63519 )
+
+[node name="Car" instance=ExtResource( 1 )]
+mass = 58.6735
+
+[node name="right_front" parent="." index="6"]
+engine_force = 1.69557e-43
+use_as_steering = true
+wheel_roll_influence = 0.5
+wheel_radius = 0.32
+wheel_rest_length = 0.07
+suspension_travel = 0.05
+suspension_stiffness = 150.0
+suspension_max_force = 2000.0
+damping_compression = 0.8
+damping_relaxation = 0.8
+
+[node name="left_front" parent="." index="7"]
+engine_force = 1.01939e-38
+use_as_steering = true
+wheel_roll_influence = 0.5
+wheel_radius = 0.32
+wheel_rest_length = 0.07
+suspension_travel = 0.05
+suspension_stiffness = 150.0
+suspension_max_force = 2000.0
+damping_compression = 0.8
+damping_relaxation = 0.8
+
+[node name="left_rear" parent="." index="8"]
+engine_force = 1.01939e-38
+use_as_traction = true
+wheel_roll_influence = 0.5
+wheel_radius = 0.32
+wheel_rest_length = 0.07
+suspension_travel = 0.05
+suspension_stiffness = 150.0
+suspension_max_force = 2000.0
+damping_compression = 0.8
+damping_relaxation = 0.8
+
+[node name="right_rear" parent="." index="9"]
+engine_force = 1.01939e-38
+use_as_traction = true
+wheel_roll_influence = 0.5
+wheel_radius = 0.32
+wheel_rest_length = 0.07
+suspension_travel = 0.05
+suspension_stiffness = 150.0
+suspension_max_force = 2000.0
+damping_compression = 0.8
+damping_relaxation = 0.8
+
+[node name="CollisionShape" type="CollisionShape" parent="." index="10"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.47402, 0 )
+shape = SubResource( 1 )

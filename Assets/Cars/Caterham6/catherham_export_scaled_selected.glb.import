@@ -2,17 +2,17 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/catherham.glb-2d157666e58eef2d2a9a28204337bf41.scn"
+path="res://.import/catherham_export_scaled_selected.glb-9b44cd64846e07a54eeee28a5cb2fec1.scn"
 
 [deps]
 
-source_file="res://Assets/Cars/Caterham/catherham.glb"
-dest_files=[ "res://.import/catherham.glb-2d157666e58eef2d2a9a28204337bf41.scn" ]
+source_file="res://Assets/Cars/Caterham6/catherham_export_scaled_selected.glb"
+dest_files=[ "res://.import/catherham_export_scaled_selected.glb-9b44cd64846e07a54eeee28a5cb2fec1.scn" ]
 
 [params]
 
-nodes/root_type="RigidBody"
-nodes/root_name="CarRigid"
+nodes/root_type="VehicleBody"
+nodes/root_name="Car"
 nodes/root_scale=1.0
 nodes/custom_script=""
 nodes/storage=0
